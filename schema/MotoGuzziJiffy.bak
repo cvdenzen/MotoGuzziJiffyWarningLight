@@ -1,0 +1,126 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "11 jan 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-P IC?
+U 1 1 54B2F7E3
+P 4000 2850
+F 0 "IC?" H 2950 3250 60  0000 C CNN
+F 1 "ATTINY85-P" H 4850 2450 60  0000 C CNN
+F 2 "DIP8" H 2950 2450 60  0001 C CNN
+F 3 "" H 4000 2850 60  0000 C CNN
+	1    4000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SWITCH_INV SW?
+U 1 1 54B2FA87
+P 1900 4000
+F 0 "SW?" H 1700 4150 50  0000 C CNN
+F 1 "SWITCH_INV" H 1750 3850 50  0000 C CNN
+F 2 "~" H 1900 4000 60  0000 C CNN
+F 3 "~" H 1900 4000 60  0000 C CNN
+	1    1900 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 54B2FB7A
+P 1800 1650
+F 0 "R?" V 1880 1650 40  0000 C CNN
+F 1 "R" V 1807 1651 40  0000 C CNN
+F 2 "~" V 1730 1650 30  0000 C CNN
+F 3 "~" H 1800 1650 30  0000 C CNN
+	1    1800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54B2FBBF
+P 2000 1650
+F 0 "R?" V 2080 1650 40  0000 C CNN
+F 1 "R" V 2007 1651 40  0000 C CNN
+F 2 "~" V 1930 1650 30  0000 C CNN
+F 3 "~" H 2000 1650 30  0000 C CNN
+	1    2000 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1900 1800 3500
+Wire Wire Line
+	2000 1900 2000 3500
+$Comp
+L R R?
+U 1 1 54B2FC0D
+P 2300 2700
+F 0 "R?" V 2380 2700 40  0000 C CNN
+F 1 "R" V 2307 2701 40  0000 C CNN
+F 2 "~" V 2230 2700 30  0000 C CNN
+F 3 "~" H 2300 2700 30  0000 C CNN
+	1    2300 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 54B2FC1C
+P 2300 2600
+F 0 "R?" V 2380 2600 40  0000 C CNN
+F 1 "R" V 2307 2601 40  0000 C CNN
+F 2 "~" V 2230 2600 30  0000 C CNN
+F 3 "~" H 2300 2600 30  0000 C CNN
+	1    2300 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 2600 2650 2600
+Wire Wire Line
+	2550 2700 2650 2700
+Wire Wire Line
+	1800 2600 2050 2600
+Connection ~ 1800 2600
+Wire Wire Line
+	2000 2700 2050 2700
+Connection ~ 2000 2700
+$EndSCHEMATC
