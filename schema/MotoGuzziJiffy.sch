@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "24 feb 2015"
+Date "25 feb 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -222,17 +222,70 @@ F 3 "~" H 5100 4250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 4450 5500 4450
-Wire Wire Line
-	5500 4450 5500 3450
-Wire Wire Line
 	4800 3500 4800 3450
 Wire Wire Line
 	4800 3450 5750 3450
-Wire Wire Line
-	5200 4050 5750 4050
 Text Label 5600 3400 0    60   ~ 0
 +12V
-Text Label 5600 4000 0    60   ~ 0
-Lamp
+Wire Wire Line
+	5200 4050 5200 3450
+Connection ~ 5200 3450
+Wire Wire Line
+	5200 4450 5750 4450
+Text Label 5500 4450 0    60   ~ 0
+LAMP
+$Comp
+L GND #PWR?
+U 1 1 54EE5528
+P 4800 5550
+F 0 "#PWR?" H 4800 5550 30  0001 C CNN
+F 1 "GND" H 4800 5480 30  0001 C CNN
+F 2 "" H 4800 5550 60  0000 C CNN
+F 3 "" H 4800 5550 60  0000 C CNN
+	1    4800 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5400 4800 5550
+$Comp
+L GND #PWR?
+U 1 1 54EE554F
+P 5350 3200
+F 0 "#PWR?" H 5350 3200 30  0001 C CNN
+F 1 "GND" H 5350 3130 30  0001 C CNN
+F 2 "" H 5350 3200 60  0000 C CNN
+F 3 "" H 5350 3200 60  0000 C CNN
+	1    5350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3100 5350 3200
+$Comp
+L 78L05 U?
+U 1 1 54EE5591
+P 4100 1900
+F 0 "U?" H 4250 1704 60  0000 C CNN
+F 1 "78L05" H 4100 2100 60  0000 C CNN
+F 2 "" H 4100 1900 60  0000 C CNN
+F 3 "" H 4100 1900 60  0000 C CNN
+	1    4100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54EE55A0
+P 4100 2300
+F 0 "#PWR?" H 4100 2300 30  0001 C CNN
+F 1 "GND" H 4100 2230 30  0001 C CNN
+F 2 "" H 4100 2300 60  0000 C CNN
+F 3 "" H 4100 2300 60  0000 C CNN
+	1    4100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2150 4100 2300
+Wire Wire Line
+	4500 1850 5350 1850
+Wire Wire Line
+	5350 1850 5350 2600
 $EndSCHEMATC
